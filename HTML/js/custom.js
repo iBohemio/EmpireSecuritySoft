@@ -298,11 +298,11 @@ jQuery(document).ready(function($) {
 	
 // search clearance	
 function defaultInput(target){
-	if((target).value == 'Search...'){(target).value=''}
+	if((target).value == 'Buscar en este sitio...'){(target).value=''}
 }
 
 function clearInput(target){
-	if((target).value == ''){(target).value='Search...'}
+	if((target).value == ''){(target).value='Buscar en este sitio...'}
 }
 
 

@@ -114,15 +114,20 @@ body {
 }
 
 /* MENU ------------------------------------------------------------*/
-
-#menu{
+#menu-linea
+{
 	width: 100%;
 	padding-top: 1px;
+	background: #ffe413; 
+	background: -webkit-gradient(linear, left top, right bottom, from(#), to(#ffe413)); 
+	background: -moz-linear-gradient(left,  #218518,  #ffe413);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe413', endColorstr='#ffe413', GradientType=1)
+	;
+}
+#menu{
+	width: 100%;
 	margin-bottom: 0px;
-	background: #f858ef; 
-	background: -webkit-gradient(linear, left top, right bottom, from(#f858ef), to(#ffe413)); 
-	background: -moz-linear-gradient(left,  #f858ef,  #ffe413);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f858ef', endColorstr='#ffe413', GradientType=1);
+	background: #3B4D41; 
 }
 
 #menu-holder{
@@ -147,7 +152,7 @@ body {
 	display: block;
 	float: left;
 	height: 100%;
-	margin-right: 32px;
+	margin-right: 60px;
 }
 
 #nav>li:first-child{}
@@ -320,6 +325,11 @@ h6{ font-size: 20px; }
 .last {
 	clear:right;
 	margin-right:0 !important;
+}
+.top-right{
+	position: absolute;
+	top:47px;
+	right: 30px;
 }
 
 
@@ -1305,10 +1315,3 @@ h6{ font-size: 20px; }
 #bottom .social a:hover{
 	background-position: 0px -32px;
 }
-
-
-
-
-
-
-

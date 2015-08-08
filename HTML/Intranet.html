@@ -2,11 +2,17 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>De Computadoras Perú</title>
+		<title>NOVA</title>
 		
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="css/social-icons.css" type="text/css" media="screen" />
+         <link rel="stylesheet" href="css/reset.css">
+
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+        <link rel="stylesheet" href="css/stylelogin.css">
 		<!--[if IE 8]>
 			<link rel="stylesheet" type="text/css" media="screen" href="css/ie8-hacks.css" />
 		<![endif]-->
@@ -22,10 +28,10 @@
 		<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
 		<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
 		<script type="text/javascript" src="js/custom.js"></script>
+        
 		
 		<!-- Isotope -->
 		<script src="js/jquery.isotope.min.js"></script>
-		
 		<!--[if IE]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -83,7 +89,7 @@
 
 	</head>
 	
-	<body class="home">
+	<body>
 
 			<!-- HEADER -->
 			<div id="header">
@@ -94,7 +100,7 @@
 					<div class="top-search">
 						<form  method="get" id="searchform" action="#">
 							<div>
-								<input type="text" value="Buscar en este sitio..." name="s" id="s" onfocus="defaultInput(this)" onblur="clearInput(this)" />
+								<input type="text" value="Search..." name="s" id="s" onfocus="defaultInput(this)" onblur="clearInput(this)" />
 								<input type="submit" id="searchsubmit" value=" " />
 							</div>
 						</form>
@@ -117,8 +123,9 @@
 				<div id="menu-holder">
 					<!-- wrapper-menu -->
 					<div class="wrapper">
-						<!-- Navigation -->
-						<ul id="nav" class="sf-menu">
+						<p>
+						  <!-- Navigation -->
+                          <ul id="nav" class="sf-menu">
 							<li class="current-menu-item"><a href="index.html">INICIO<span class="subheader">Bienvenidos</span></a></li>
 							<li><a href="nosotros.html">NOSOTROS<span class="subheader">Conózcanos</span></a>
 								<ul>
@@ -138,7 +145,7 @@
 							</li>
 							<li><a href="contactenos.html">CONTÁCTENOS<span class="subheader">Evaluación sin costo</span></a></li>
 						</ul>
-						<!-- Navigation -->
+                          <!-- Navigation -->					</p>
 					</div>
 					<!-- wrapper-menu -->
 				</div>
@@ -149,38 +156,60 @@
 			
 			
 
-			<!-- Slider -->
-			<div id="slider-block">
-				<div id="slider-holder">
-					<div id="slider">
-						<a href="http://www.luiszuno.com"><img src="images/01.jpg" title="Seguridad en la palma de su mano" alt="" /></a>
-						<a href="http://themeforest.net/user/Ansimuz/portfolio?ref=ansimuz"><img src="images/02.jpg" title="Monitoreo y rápida reacción las 24 hrs." alt="" /></a>
-					</div>
-				</div>
-			</div>
-			<!-- ENDS Slider -->
 			
 			<!-- MAIN -->
 			<div id="main">
 				<!-- wrapper-main -->
 				<div class="wrapper">
 					
-					<!-- headline -->
-					<div class="clear"></div>
-					<div id="headline">
-						<span class="main">Ahora la seguridad electrónica al alcance de todos</span>
-						<span class="sub">Contamos con planes pensando en todos nuestros clientes.</span>
-						<a href="contactenos.html" id="link" class="link-button-big"><span>Solicite su evaluación</span></a> 
-					</div>
-					<!-- ENDS headline -->
 					
-		
+					<!-- content -->
+					<!-- Form Module-->
+<div class="module form-module">
+  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
+    
+  </div>
+  <div class="form">
+    <h2>Autentificación</h2>
+    <form>
+      <input type="text" placeholder="Usuario"/>
+      <input type="password" placeholder="Contraseña"/>
+      <button>Login</button>
+    </form>
+  </div>
+  <div class="form">
+    <h2>Crear una cuenta</h2>
+    <form>
+      <input type="text" placeholder="Usuario"/>
+      <input type="password" placeholder="Contraseña"/>
+      <input type="email" placeholder="Correo Electrónico"/>
+      <input type="tel" placeholder="Celular (Opcional)"/>
+      <button>Resgitro</button>
+    </form>
+  </div>
+  <div class="cta"><a href="login.html">¿Olvidaste tu contraseña?</a></div>
+</div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/login.js"></script>
+					<!-- ENDS content -->
 				</div>
 				<!-- ENDS wrapper-main -->
 			</div>
 			<!-- ENDS MAIN -->
 			
-		
+			<!-- Twitter -->
+			<div id="twitter">
+				<div class="wrapper">
+					<a href="#" id="prev-tweet"></a>
+					<a href="#" id="next-tweet"></a>
+					<img id="bird" src="img/bird.png" alt="Tweets" />
+					<div id="tweets">
+						<ul class="tweet_list"></ul>
+					</div>
+				</div>
+			</div>
+			<!-- ENDS Twitter -->
 
 			
 			<!-- FOOTER -->
@@ -193,11 +222,11 @@
 							<h6>Pages</h6>
 							<ul>
 								<li class="page_item"><a href="index.html">Home</a></li>
-								<li class="page_item"><a href="nosotros.html">Features</a></li>
+								<li class="page_item"><a href="features.html">Features</a></li>
 								<li class="page_item"><a href="blog.html">Blog</a></li>
 								<li class="page_item"><a href="portfolio.html">Portfolio</a></li>
 								<li class="page_item"><a href="gallery.html">Gallery</a></li>
-								<li class="page_item"><a href="contactenos.html">Contact</a></li>
+								<li class="page_item"><a href="contact.html">Contact</a></li>
 							</ul>
 						</li>
 						

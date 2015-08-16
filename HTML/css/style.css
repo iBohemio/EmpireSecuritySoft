@@ -118,10 +118,15 @@ body {
 {
 	width: 100%;
 	padding-top: 1px;
-	background: #ffe413; 
-	background: -webkit-gradient(linear, left top, right bottom, from(#), to(#ffe413)); 
-	background: -moz-linear-gradient(left,  #218518,  #ffe413);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe413', endColorstr='#ffe413', GradientType=1)
+background: #000000; /* Old browsers */
+background: -moz-linear-gradient(left,  #000000 0%, #febf01 50%, #febf01 50%, #000000 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(50%,#febf01), color-stop(50%,#febf01), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #000000 0%,#febf01 50%,#febf01 50%,#000000 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #000000 0%,#febf01 50%,#febf01 50%,#000000 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #000000 0%,#febf01 50%,#febf01 50%,#000000 100%); /* IE10+ */
+background: linear-gradient(to right,  #000000 0%,#febf01 50%,#febf01 50%,#000000 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+
 	;
 }
 #menu{
@@ -152,7 +157,7 @@ body {
 	display: block;
 	float: left;
 	height: 100%;
-	margin-right: 60px;
+	margin-right: 55px;
 }
 
 #nav>li:first-child{}
@@ -189,9 +194,9 @@ body {
 	display: block;
 	margin-top: 33px;
 	background: #1d2023;
-	border-radius: 0px 10px 0px 10px;
-	-moz-border-radius: 0px 0px 10px 10px;
-	-webkit-border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 13px 13px;
+	-moz-border-radius: 0px 0px 13px 13px;
+	-webkit-border-radius: 0px 0px 13px 13px;
 	
 	-webkit-box-shadow: 0px 3px 2px rgba(0,0,0,0.4); 
 	-moz-box-shadow: 0px 3px 2px rgba(0,0,0,0.4); 
